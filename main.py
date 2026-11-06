@@ -36,7 +36,7 @@ def handle_message(event):
 
     try:
         response = ai_client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-3.8-flash',
             contents=f"你是一個貼心的個人秘書與多領域專家。請以簡潔、專業且親切的語氣回覆以下訊息：\n\n{user_message}"
         )
         ai_reply_text = response.text
